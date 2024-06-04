@@ -9,7 +9,7 @@ public abstract class ListaTarefas {
         return listaTarefas;
     }
 
-    public static Tarefa buscarTarefa(String titulo) {
+    public static Tarefa buscarTarefa(String titulo) throws Exception {
 
         for (Tarefa tempTarefa : listaTarefas) {
 
@@ -19,7 +19,7 @@ public abstract class ListaTarefas {
             }   
         }
 
-        return null;
+        throw new Exception("Tarefa não localizada"); 
     }
 
     public static void CadastrarTarefa(Tarefa tarefa) {
