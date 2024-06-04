@@ -25,4 +25,8 @@ public abstract class ListaTarefas {
     public static void CadastrarTarefa(Tarefa tarefa) {
         listaTarefas.add(tarefa);
     }
+
+    public static void excluirTarefa(Tarefa tarefa) {
+        listaTarefas.remove(tarefa);
+    }
 }
