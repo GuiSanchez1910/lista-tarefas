@@ -21,4 +21,8 @@ public abstract class ListaTarefas {
 
         return null;
     }
+
+    public static void CadastrarTarefa(Tarefa tarefa) {
+        listaTarefas.add(tarefa);
+    }
 }
