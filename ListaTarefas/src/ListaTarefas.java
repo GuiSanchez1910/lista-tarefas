@@ -4,10 +4,7 @@ public abstract class ListaTarefas {
     
     private static ArrayList<Tarefa> listaTarefas = new ArrayList<>();
 
-    public static ArrayList<Tarefa> getListaTarefas() {
-
-        return listaTarefas;
-    }
+    
 
     public static Tarefa buscarTarefa(String titulo) throws Exception {
 
@@ -28,5 +25,10 @@ public abstract class ListaTarefas {
 
     public static void excluirTarefa(Tarefa tarefa) {
         listaTarefas.remove(tarefa);
+    }
+
+    public static ArrayList<Tarefa> listarTarefas() {
+
+        return listaTarefas;
     }
 }
